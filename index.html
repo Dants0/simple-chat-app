@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chat Application</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div id="chat-container">
+    <div id="sidebar">
+      <div id="box2">
+        <input type="text" id="username-input" placeholder="Seu nome" />
+      </div>
+      <div id="box1">
+        <div id="room-selector">
+          <select id="room-select">
+            <!-- As salas serão populadas dinamicamente -->
+          </select>
+        </div>
+        <div id="create-room">
+          <input type="text" id="new-room-input" placeholder="Nome da nova sala" />
+          <button id="create-room-button">Criar Sala</button>
+        </div>
+      </div>
+      <div id="theme-toggle">
+        <button id="toggleTheme">Modo Escuro</button>
+      </div>
+    </div>
+    <div id="chat-area">
+      <div id="messages"></div>
+      <div id="input-container">
+        <input type="text" id="message-input" placeholder="Escreva algo..." />
+        <button id="send-button">Enviar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+#chat-container {
+  display: flex;
+  height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar {
+  width: 300px;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+#box2{
+  height: 100px;
+  width: 100%;
+}
+
+#box2 #username-input{
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 85%;
+}
+
+#room-selector,
+#create-room {
+  margin-bottom: 10px;
+}
+
+#room-selector select,
+#create-room input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 85%;
+}
+
+#create-room button{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 85%;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#create-room button:hover{
+  color: #fff;
+  background-color: rgba(71, 193, 19, 0.8);
+  transition: all 0.2s ease-in-out;
+  /* filter: brightness(80%); */
+}
+
+
+#user-list {
+  margin-bottom: 20px;
+}
+
+#user-list h3 {
+  margin: 0 0 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#user-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#user-list ul li {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+#chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #e9e9e9;
+  border-radius: 0 5px 5px 0;
+}
+
+#input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+#input-container input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#send-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+#send-button:hover {
+  background-color: #0056b3;
+}
+
+.message {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  max-width: 70%;
+}
+
+.message.own {
+  background-color: #d1e7dd;
+  align-self: flex-end;
+}
+
+.message.other {
+  background-color: #f8d7da;
+  align-self: flex-start;
+}
+
+/* Dark Mode */
+
+body.dark-mode {
+  background-color: #333;
+  color: #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+#chat-container.dark-mode {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#sidebar.dark-mode {
+  background-color: #555;
+  border-right: 1px solid #666;
+}
+
+#user-list h3 {
+  color: #ddd;
+}
+
+#user-list ul li {
+  background-color: #666;
+  color: #ddd;
+}
+
+#messages.dark-mode {
+  background-color: #555;
+}
+
+#input-container.dark-mode {
+  background-color: #444;
+}
+
+#send-button.dark-mode {
+  background-color: #0056b3;
+  color: #ddd;
+}
+
+.message.own.dark-mode {
+  background-color: #444;
+}
+
+.message.other.dark-mode {
+  background-color: #666;
+}
